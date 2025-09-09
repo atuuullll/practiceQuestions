@@ -2,6 +2,7 @@
 function printPalindromePattern(rows) {
     // Pattern 1: Increasing palindrome
     console.log("Pattern 1:");
+    console.log("Increasing Palindrome");
     for(let i = 1; i <= rows; i++) {
         let pattern = '';
         // Print numbers in increasing order
@@ -17,6 +18,7 @@ function printPalindromePattern(rows) {
 
     // Pattern 2: Number palindrome pyramid
     console.log("\nPattern 2:");
+    console.log("Number Palindrome Pyramid");
     for(let i = 1; i <= rows; i++) {
         let pattern = '';
         // Add spaces
