@@ -39,3 +39,14 @@ function printPalindromePattern(rows) {
 
 // Test the patterns
 printPalindromePattern(5);
+
+// Function to check if a number or string is a palindrome
+function isPalindrome(input) {
+    // Convert input to string
+    let str = input.toString();
+    // Reverse the string
+    let reversedStr = str.split('').reverse().join('');
+    // Check if original and reversed strings are the same
+    return str === reversedStr;
+}
+
