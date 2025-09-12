@@ -77,3 +77,34 @@ function chunkArray(arr, size) {
 }
 
 console.log(chunkArray(array, 2));
+
+// Function to find the index of a specific value in an array
+function findIndex(arr, value) {
+    return arr.indexOf(value);
+}
+
+console.log(findIndex(array, 3));
+console.log(findIndex(array, 6));
+
+// Function to check if an array contains a specific value
+function containsValue(arr, value) {
+    return arr.includes(value);
+}
+
+console.log(containsValue(array, 3));
+console.log(containsValue(array, 6));
+
+// Function to reverse an array
+function reverseArray(arr) {
+    return arr.slice().reverse();
+}
+
+console.log(reverseArray(array));
+
+// Function to concatenate two arrays
+function concatenateArrays(arr1, arr2) {
+    return arr1.concat(arr2);
+}
+
+let anotherArray = [6, 7, 8];
+console.log(concatenateArrays(array, anotherArray));
