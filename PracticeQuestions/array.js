@@ -10,7 +10,6 @@ console.log(filteredArray);
 let sum = filteredArray.reduce((acc, val) => acc + val, 0);
 console.log(sum);
 
-prompt("This is an array practice file.");
 
 let names = ["Alice", "Bob", "Charlie"];
 names.forEach(name => console.log(name));
@@ -108,3 +107,15 @@ function concatenateArrays(arr1, arr2) {
 
 let anotherArray = [6, 7, 8];
 console.log(concatenateArrays(array, anotherArray));
+
+// Function to find the frequency of each element in an array
+function elementFrequency(arr) {
+    let frequency = {};
+    arr.forEach(item => {
+        frequency[item] = (frequency[item] || 0) + 1;
+    });
+    return frequency;
+}
+
+let arrayWithFreq = [1, 2, 2, 3, 3, 3];
+console.log(elementFrequency(arrayWithFreq));
